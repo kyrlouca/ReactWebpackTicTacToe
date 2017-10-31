@@ -11,7 +11,7 @@
             "name": "Attach to Chrome",
             "port": 8080,
             "sourceMaps" : true,
-            "webRoot": "${workspaceRoot}/dist"
+            "webRoot": "${workspaceRoot}"
         },
         {
                     "name": "Chrome",
@@ -19,6 +19,6 @@
                     "request": "launch",
                     "sourceMaps" : true,
                     "url": "http://localhost:8080/indexTicTacTo.html",
-                    "webRoot": "${workspaceRoot}/dist"
+                    "webRoot": "${workspaceRoot}"
         }
 ]}
