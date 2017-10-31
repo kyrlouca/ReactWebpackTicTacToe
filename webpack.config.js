@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var copyPl = require('copy-webpack-plugin');
 var config = {
     entry: path.resolve(__dirname, "src/js", "app.js"),
     output: {
@@ -21,6 +22,10 @@ var config = {
         }
         ]
     },
+    plugins: [
+        new copyPl([{from:"indexTicTacTo.html",to:"dist/index.html"}])
+    ]
+        
 }
 
 module.exports = config;
